@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱的告白</title>
+    <style>
+        body {
+            background: #ffe6f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Microsoft YaHei', '苹方', sans-serif;
+        }
+
+        .love-text {
+            font-size: 4em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff1493, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            15% { transform: scale(1.3); }
+            30% { transform: scale(1); }
+            45% { transform: scale(1.15); }
+            60% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+
+        /* 手机适配 */
+        @media (max-width: 768px) {
+            .love-text {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="love-text">我爱你</div>
+</body>
+</html>
